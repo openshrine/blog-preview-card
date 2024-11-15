@@ -3,12 +3,14 @@ body {
     grid-template-columns: 1fr;
     place-items: center;
     font-family: "Figtree", sans-serif;
-    background-color: #F4D04E;
+    background-color: #D5E1EF;
+    min-height: 100vh;
+    flex: 1;
 }
 
 section {
-    width: 30%;
-    height: 85%;
+    width: 33%;
+    height: 80%;
     grid-template-columns: 1fr;
     border: solid 2px black;
     border-radius: 20px;
@@ -21,6 +23,7 @@ section {
 section img {
     width: 100%;
     border-radius: 20px;
+
 }
 
 h3 {
@@ -28,7 +31,7 @@ h3 {
 }
 
 h4 {
-    background-color: #F4D04E;
+    background-color: #D5E1EF;
     border-radius: 5px;
     padding: 5px 10px;
     width: fit-content;
@@ -51,9 +54,8 @@ p {
 }
 
 #author img {
-    width: 10%;
-    border-radius: 50%;
-
+    width: 8%;
+    border-radius: 100%;
 }
 
 #author p {
@@ -66,4 +68,20 @@ p {
 footer {
     display: fixed;
     bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        width: 45%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    section {
+        width: 80%;
+        height: 80%;
+    }
+
 }
